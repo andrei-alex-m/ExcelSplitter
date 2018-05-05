@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kaly.Utils
+namespace CS.BusinessLayer.Interfaces
 {
-    public static class StringWorks
+    class DenumirePJ : IDenumire
     {
-        #region Splitters
-
-        
-
-        #endregion
-
+        public string Nume { get ; set ; }
     }
 }

@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kaly.Utils
+namespace CS.BusinessLayer.Interfaces
 {
-    public static class StringWorks
+    interface IAdresa
     {
-        #region Splitters
-
-        
-
-        #endregion
-
+         int ID { get; set; }
+         string Judet { get; set; }
     }
 }

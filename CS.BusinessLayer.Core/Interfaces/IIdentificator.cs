@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kaly.Utils
+namespace CS.BusinessLayer.Interfaces
 {
-    public static class StringWorks
+    interface IIdentificator
     {
-        #region Splitters
-
-        
-
-        #endregion
-
     }
 }

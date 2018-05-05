@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kaly.Utils
+namespace CS.BusinessLayer.Dictionaries
 {
-    public static class StringWorks
+    enum TipSufixPJ
     {
-        #region Splitters
-
-        
-
-        #endregion
-
+        SRL=0,
+        SA=1
     }
 }
