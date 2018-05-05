@@ -25,5 +25,6 @@ namespace CS.BusinessLayer.Model
         public IIdentificator Identificator { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         IAdresa IPersoana.Adresa { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         TipPersoana IPersoana.Tip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        IDenumire IPersoana.Denumire { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

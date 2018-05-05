@@ -32,6 +32,8 @@ namespace CS.BusinessLayer.Interfaces
         {
             bool Item1=true;
             List<string> Item2 = new List<string>();
+            return (Item1,Item2);
+
             _funcs.ForEach(x =>
             {
 
