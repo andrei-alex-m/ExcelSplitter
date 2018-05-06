@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    class IdentificatorPJ:IIdentificator
+    class IdentificatorPJ:Identificator
     {
         public int CUI { get; set; }
         public bool RO { get; set; }

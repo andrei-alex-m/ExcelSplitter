@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    interface IIdentificator
+    abstract class Identificator
     {
+        
     }
 }

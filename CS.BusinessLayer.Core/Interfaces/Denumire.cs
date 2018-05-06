@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    interface IDenumire
+    abstract class Denumire
     {
         string Nume { get; set; }
     }

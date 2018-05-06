@@ -7,37 +7,45 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    public class Validator<T> : IValidator where T:BaseObject
+    public class Validator
     {
-        private List<Func<T, (bool, IEnumerable<string>)>> _funcs;
-
+        public BaseObject bo { get; set; }
+        private List<(Func<BaseObject, bool>, string)> _funcs;
+        public Validator(List<(Func<BaseObject, bool>, string)> funcs)
+        {
+            _funcs = funcs;
+        }
         public Validator()
         {
 
         }
 
-        public Validator(List<Func<T,(bool, IEnumerable<string>)>> funcs)
-        {
-            _funcs = funcs;
-        }
-
-
         public bool IsValid => Validate().Item1;
 
         public IEnumerable<string> ValidationMessages() => Validate().Item2;
 
-        public (bool, IEnumerable<string>) ValidationStatus =>Validate();
+        public (bool, IEnumerable<string>) ValidationStatus => Validate();
 
         protected (bool, IEnumerable<string>) Validate()
         {
-            bool Item1=true;
+
+            bool Item1 = true;
             List<string> Item2 = new List<string>();
-            return (Item1,Item2);
+
+            if (null == bo || null == _funcs)
+                return (Item1, Item2);
 
             _funcs.ForEach(x =>
             {
-
+                var z = x.Item1(bo);
+                if (!z)
+                {
+                    Item1 = false;
+                    Item2.Add(x.Item2);
+                };
             });
+
+            return (Item1, Item2);
         }
 
     }

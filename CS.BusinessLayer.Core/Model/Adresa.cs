@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Model
 {
-    class Adresa : BaseObject, IAdresa
+    class Adresa
     {
-        public string Judet { get ; set ; }
+        string Judet { get; set; }
+        string Localitate { get; set; }
+        string Strada { get; set; }
+
     }
 }

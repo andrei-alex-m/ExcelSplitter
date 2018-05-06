@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    class DenumirePF : IDenumire
+    class DenumirePF : Denumire
     {
-        public string Nume { get ; set ; }
         public string Initiala { get; set; }
         public string Prenume { get; set; }
     }

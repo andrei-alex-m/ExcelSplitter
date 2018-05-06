@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    class IdentificatorPF:IIdentificator
+    class IdentificatorPF:Identificator, IValidator
     {
         public int CNP { get; set; }
+        public Validator Validator { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
     }
 }

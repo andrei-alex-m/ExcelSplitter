@@ -9,7 +9,6 @@ namespace CS.BusinessLayer.Model
 {
     public abstract class BaseObject
     {
-        public Validator<BaseObject> Validator { get; }
         public int ID { get; set; }
     }
 }
