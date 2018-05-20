@@ -4,7 +4,7 @@ using System;
 
 namespace CS.BusinessLayer.Model
 {
-    class ActIdentitate:Act
+    public class ActIdentitate:Act
     {
         string Serie { get; set; }
         TipActIdentitate? TipActIdentitate { get; set; }

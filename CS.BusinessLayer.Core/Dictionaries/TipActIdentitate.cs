@@ -1,6 +1,6 @@
 ﻿namespace CS.BusinessLayer.Dictionaries
 {
-    enum TipActIdentitate
+    public enum TipActIdentitate
     {
         BI = 0,
         CI = 1,

@@ -9,7 +9,6 @@ namespace CS.BusinessLayer.Interfaces
     class IdentificatorPF:Identificator, IValidator
     {
         public int CNP { get; set; }
-        public Validator Validator { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        //public static Validator Validator { get {return new Validator(); }
     }
 }

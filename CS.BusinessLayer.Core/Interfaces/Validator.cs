@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    public class Validator
+    public class Validator<T>
     {
-        public BaseObject bo { get; set; }
-        private List<(Func<BaseObject, bool>, string)> _funcs;
-        public Validator(List<(Func<BaseObject, bool>, string)> funcs)
+        public T bo { get; set; }
+        private List<(Func<T, bool>, string)> _funcs;
+        public Validator(List<(Func<T, bool>, string)> funcs)
         {
             _funcs = funcs;
         }

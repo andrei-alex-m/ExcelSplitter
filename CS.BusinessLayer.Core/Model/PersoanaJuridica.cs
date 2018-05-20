@@ -2,7 +2,7 @@ using CS.BusinessLayer.Dictionaries;
 using CS.BusinessLayer.Interfaces;
 namespace CS.BusinessLayer.Model
 {
-    class PersoanaJuridica:Persoana
+/*     class PersoanaJuridica:Persoana
     {
         public PersoanaJuridica()
         {
@@ -11,5 +11,5 @@ namespace CS.BusinessLayer.Model
             this.Adresa=new Adresa();
             this.Tip=TipPersoana.Fizica;
         }
-    }
+    } */
 }

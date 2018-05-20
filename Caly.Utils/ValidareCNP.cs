@@ -3,7 +3,7 @@ using Caly.Utils.Enums;
 
 namespace Caly.Utils
 {
-    public static class CNP
+    public static class ValidareCNP
     {
         public static bool Valid(string cnp)
         {

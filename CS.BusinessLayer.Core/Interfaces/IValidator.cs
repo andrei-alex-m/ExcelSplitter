@@ -4,6 +4,6 @@ namespace CS.BusinessLayer.Interfaces
 {
     public interface IValidator
     {
-        Validator Validator {get; set;}
+        //Singleton Validator Validator { get; }
     }
 }

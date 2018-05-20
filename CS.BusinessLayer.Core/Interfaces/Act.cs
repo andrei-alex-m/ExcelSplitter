@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS.BusinessLayer.Interfaces
 {
-    abstract class Act
+    public abstract class Act
     {
         DateTime? DataEmiterii { get; set; }
         string Emitent { get; set; }
